@@ -1,0 +1,33 @@
+<ion-list lines="none">
+  <ion-item *ngFor="let addedCity of addedCities; index as i">
+    <app-added-city
+      style="width: 100%"
+      [addedCity]="addedCity"
+    ></app-added-city>
+  </ion-item>
+</ion-list>
+<!-- <ion-grid>
+  <ion-row>
+    <ion-col class="ion-margin-horizontal">
+      <div *ngIf="addedCities.length > 0">
+        <ion-list
+          lines="none"
+          style="
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+          "
+        >
+          <ion-row
+            *ngFor="let addedCity of addedCities; index as i"
+            class="ion-justify-content-start"
+          >
+            <app-added-city [addedCity]="addedCity"></app-added-city>
+          </ion-row>
+        </ion-list>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid> -->

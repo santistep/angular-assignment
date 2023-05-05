@@ -1,0 +1,23 @@
+.weather-card {
+  &.sunny {
+    background-image: url("./../../../../assets/images/suny.jpg") !important;
+  }
+  &.rain {
+    background-image: url("./../../../../assets/images/rain2.jpg") !important;
+  }
+  &.clouds {
+    background-image: url("./../../../../assets/images/cloudy.jpg") !important;
+  }
+  &.haze {
+    background-image: url("./../../../../assets/images/cloudy.jpg") !important;
+  }
+  &.snow {
+    background-image: url("./../../../../assets/images/snow.jpg") !important;
+  }
+  &.storm {
+    background-image: url("./../../../../assets/images/storm2.jpg") !important;
+  }
+  background: no-repeat;
+  background: fixed;
+  background-attachment: fixed;
+}

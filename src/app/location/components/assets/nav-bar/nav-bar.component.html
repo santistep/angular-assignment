@@ -1,0 +1,39 @@
+<!-- <ion-tab-bar color="light">
+  <ion-toolbar color="dark">
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        justify-content: flex-start;
+      "
+    >
+      <ion-button (click)="backToHome()" color="light">
+        <ion-icon name="home-outline"></ion-icon>
+      </ion-button>
+      <ion-button (click)="mostrarModal()" color="light">
+        Add Cities</ion-button
+      >
+      <ion-button (click)="showWeatherPage()" color="light">
+        Weather</ion-button
+      >
+      <ion-button (click)="showNewsPage()" color="light"> News</ion-button>
+    </div>
+  </ion-toolbar>
+</ion-tab-bar> -->
+<ion-toolbar color="dark">
+  <ion-buttons>
+    <ion-button slot="primary" (click)="backToHome()" color="light">
+      <ion-icon name="home-outline"></ion-icon>
+    </ion-button>
+    <ion-button slot="secondary" (click)="mostrarModal()" color="light">
+      Add Cities</ion-button
+    >
+    <ion-button slot="secondary" (click)="showWeatherPage()" color="light">
+      Weather</ion-button
+    >
+    <ion-button slot="secondary" (click)="showNewsPage()" color="light">
+      News</ion-button
+    >
+  </ion-buttons>
+</ion-toolbar>

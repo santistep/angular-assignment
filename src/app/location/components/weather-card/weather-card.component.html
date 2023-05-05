@@ -1,0 +1,23 @@
+<ion-card color="light" class="weather-card + {{ weatherClass(weather) }}">
+  <ion-card-header>
+    <ion-card-title Style="font-size: 2.25rem;"
+      >{{ temp.toFixed(0) + "°C" }}
+      <ion-icon name="{{ iconName(weather) }}"></ion-icon>
+    </ion-card-title>
+    <ion-card-subtitle style="font-size: 1.25rem"
+      >{{ description }} <br />
+      <p style="font-size: small">
+        feels Like {{ feelsLike.toFixed(0) + "°C" }}
+      </p>
+    </ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content style="display: flex; justify-content: space-between">
+    {{ city!.name | titlecase }}
+    <ion-icon
+      style="cursor: pointer"
+      (click)="onRemovedCity(city)"
+      name="trash-outline"
+    ></ion-icon>
+  </ion-card-content>
+</ion-card>

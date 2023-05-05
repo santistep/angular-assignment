@@ -1,0 +1,57 @@
+<ion-header>
+  <app-nav-bar></app-nav-bar>
+</ion-header>
+
+<ion-content>
+  <ion-grid fixed>
+    <ion-row *ngIf="addedCities.length > 0; else noCitiesAdded">
+      <ion-col>
+        <app-added-city-list [addedCities]="addedCities"></app-added-city-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!-- <div *ngIf="addedCities.length > 0; else noCitiesAdded">
+    <app-added-city-list [addedCities]="addedCities"></app-added-city-list>
+  </div> -->
+</ion-content>
+<!-- <ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-margin-horizontal">
+        <ion-row class="ion-justify-content-center">
+          <div *ngIf="addedCities.length > 0; else noCitiesAdded">
+            <app-added-city-list
+              [addedCities]="addedCities"
+            ></app-added-city-list>
+          </div>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content> -->
+<<ng-template #noCitiesAdded>
+  <div style="height: 100%; margin: 40px">
+    <h1 style="text-align: center; font-size: xx-large">
+      Wellcome to the Weather News App!
+    </h1>
+    <h3 style="text-align: center">
+      Click on <strong>Add Cities</strong> to get latest news or weather
+      forecast
+    </h3>
+  </div>
+</ng-template>
+
+<!-- <ion-content>
+  <ion-modal trigger="modal-id">
+    <ng-template>
+      <ion-content>
+        <app-location></app-location>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+</ion-content> -->
+
+<!-- <ion-button id="modal-id" class="text_dark">
+  Add new location
+  <ion-icon name="add-circle-outline" color="dark"></ion-icon>
+</ion-button> -->

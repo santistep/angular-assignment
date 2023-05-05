@@ -1,0 +1,32 @@
+<ion-header>
+  <app-nav-bar></app-nav-bar>
+</ion-header>
+<ion-content class="weather-checked-cities">
+  <ion-grid fixed *ngIf="checkedCities.length > 0; else noCityAdded">
+    <ion-row>
+      <ion-col
+        size-md="3"
+        size-sm="6"
+        size-xs="12"
+        *ngFor="let city of checkedCities"
+      >
+        <app-news-card [city]="city"></app-news-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!-- Template to shw when no cities added -->
+  <ng-template #noCityAdded>
+    <h3
+      style="
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      "
+    >
+      There are no cities added to the service.
+      <br />
+      Please, add cities from the nav bar!
+    </h3>
+  </ng-template>
+</ion-content>

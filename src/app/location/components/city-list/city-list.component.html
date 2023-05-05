@@ -1,0 +1,32 @@
+<ion-content style="height: 366px">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-margin-horizontal">
+        <ion-list lines="none">
+          <ion-row
+            *ngFor="let city of cityList; index as i"
+            class="ion-justify-content-between"
+          >
+            <app-city
+              [city]="city"
+              [index]="i"
+              class="app-city-style"
+            ></app-city>
+          </ion-row>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<!-- <ng-template #noMoreCitiesToAdd>
+  <h2
+    style="
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    "
+  >
+    All cities in this service were added
+  </h2>
+</ng-template> -->

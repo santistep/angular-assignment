@@ -1,0 +1,15 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 5%;
+  // transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 30px;
+  line-height: 20px;
+  font-family: sans-serif;
+}

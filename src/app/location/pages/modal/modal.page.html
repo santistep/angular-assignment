@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" (click)="exitModal()"> </ion-back-button>
+    </ion-buttons>
+    <ion-title style="text-align: center">{{title}}</ion-title>
+    <ion-icon
+      slot="end"
+      name="close-outline"
+      size="large"
+      (click)="exitModal()"
+      color="light"
+      style="position: relative; cursor: pointer; padding-right: 6px"
+    ></ion-icon>
+  </ion-toolbar>
+</ion-header>
+<ion-content scroll-y="false">
+  <app-location
+    style="position: relative; display: block; height: 100%"
+  ></app-location>
+</ion-content>

@@ -1,0 +1,16 @@
+<div class="city-container">
+  <ion-label style="font-size: 1.3rem"
+    >{{ city.name }}, {{ city.country }}</ion-label
+  >
+  <ion-button
+    (click)="addCity(city); isChecked(city.id, index)"
+    type="ionFocus"
+    size="small"
+    shape="round"
+    fill="outline"
+    color="dark"
+    style="font-weight: bold"
+  >
+    {{ buttonLabel }}
+  </ion-button>
+</div>

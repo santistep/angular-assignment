@@ -1,0 +1,20 @@
+<ion-grid>
+  <ion-row>
+    <ion-col class="ion-margin-horizontal">
+      <ion-item lines="none">
+        <ion-searchbar
+          (keyup)="searchCity()"
+          #txtInput
+          color="light"
+          placeholder="Enter Location Name"
+          showClearButton="blur"
+          (ionClear)="onClear()"
+        ></ion-searchbar>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<!-- <ion-row class="ion-justify-content-center app-title ion-margin-vertical">
+  {{ title }}
+</ion-row> -->
